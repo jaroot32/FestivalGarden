@@ -1,0 +1,26 @@
+.about{
+    height: 750px;
+    .about_one{    
+        height: 50%;
+        width: 100%;
+        background: linear-gradient(
+            to bottom,
+            white 15px,
+            #F8FDF3 280px,
+            rgb(237, 243, 237)  ) ;        
+    }
+    .about_two{    
+        height: 50%;
+        width: 100%;
+        background: linear-gradient(
+            to bottom,
+            rgb(237, 243, 237) 320px,
+            transparent)    
+    }
+    .about_two--img{
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;    
+    } 
+
+}
