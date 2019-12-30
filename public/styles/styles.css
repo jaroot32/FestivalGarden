@@ -30,7 +30,7 @@
   text-decoration: none;
   font-size: 13px;
   border-radius: 15px;
-  background: #FFFFFF;
+  background: #ffffff;
   background-color: white;
   padding: 4px 8px;
   position: absolute;
@@ -121,42 +121,6 @@
   opacity: 0.7;
 }
 
-/* size */
-/* fonts */
-/* colors */
-body {
-  font-size: 16px;
-  box-sizing: content-box;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-}
-
-.bg {
-  height: 780px;
-  display: block;
-  position: relative;
-}
-.bg:after {
-  content: "";
-  background-image: url("../../public/images/garden2.jpg");
-  background-position: center;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-.brand {
-  color: #1A0D14;
-  font-size: 2.8rem;
-}
-.brand ul li {
-  padding: 5;
-}
-
 .main {
   height: 650px;
 }
@@ -216,6 +180,55 @@ body {
 }
 
 .form_icon {
+  padding: 0 5px;
+}
+
+/* size */
+/* fonts */
+/* colors */
+body {
+  font-size: 16px;
+  box-sizing: content-box;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+body h2 {
+  font-size: 2.5rem;
+}
+
+.bg {
+  height: 780px;
+  display: block;
+  position: relative;
+}
+.bg:after {
+  content: "";
+  background-image: url("../../public/images/garden2.jpg");
+  background-position: center;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.bg .menu-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1020;
+  width: 100%;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.brand {
+  font-family: "Roboto", sans-serif;
+  color: #1A0D14;
+  font-size: 2.9rem;
+}
+
+.list-social li {
+  list-style-type: none;
   padding: 0 5px;
 }
 
