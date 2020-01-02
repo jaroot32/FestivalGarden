@@ -3,9 +3,9 @@ $(document).ready(function(){
    
     $(window).on('scroll', function(){
         if ( $(window).scrollTop() > altura){
-            $('.navbar').addClass('menu-fixed');
+            $('.navbar').addClass('fixed-top');
         } else{
-            $('.navbar').removeClass('menu-fixed');
+            $('.navbar').removeClass('fixed-top');
         }
     });
 });

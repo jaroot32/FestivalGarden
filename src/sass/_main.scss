@@ -1,15 +1,23 @@
+$size-title-h1: 3rem;
 $size-title-h2: 2.5rem;
 $size-form-title: 2.2rem;
+$font-size-subtitle: 1.5rem;
+$font-general: 'Roboto', sans-serif;
 
 .main{
     height: 650px;
   }
   .main_mark{
       height: 100%;
+      h1{
+          font-size: $size-title-h1;
+          font-family: $font-general;
+      }
+      p{
+          font-size: $font-size-subtitle;
+      }
   }
-  .main_mark--title{
-      font-size: 3.25rem;
-  }
+ 
   .main_mark--button{
       cursor: pointer;
       border: none;
@@ -47,6 +55,7 @@ $size-form-title: 2.2rem;
   }
   .form_title{
       font-size: $size-form-title;
+      font-family: $font-general;
       padding: 8px;
   }
   .form_content{

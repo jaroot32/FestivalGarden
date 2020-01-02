@@ -5,15 +5,11 @@ $size-general: 16px;
 $size-brand: 2.9rem;
 $size-form-title: 2.2rem;
 
-
 /* fonts */
 $font-general: 'Roboto', sans-serif;
 /* colors */
 $color-brand: #1A0D14;
 $color-nav: #201414;
-
-
-
 
 body{
     font-size: $size-general;
@@ -22,7 +18,7 @@ body{
     position: relative;
     h2{
     font-size: $size-title-h2;
-    }   
+    }    
 }
 
 .bg{
@@ -40,16 +36,8 @@ body{
         right: 0;
         position: absolute;
         z-index: -1;
-    } 
-    .menu-fixed{
-        position: fixed;
-        top: 0;
-        z-index: 1020;
-        width: 100%;
-        box-shadow: 0px 4px 3px rgba(0,0,0, 0.5);
-    }
+    }  
 }
-
 .brand{
     font-family: $font-general;
     color: $color-brand;

@@ -60,6 +60,7 @@
 }
 .text .text_end ul li {
   margin: 0 8px;
+  list-style-type: none;
 }
 
 .festival {
@@ -67,11 +68,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.festival_title {
-  margin: 10px 0;
-  padding: 20px 0;
 }
 
 .festival_main {
@@ -128,9 +124,12 @@
 .main_mark {
   height: 100%;
 }
-
-.main_mark--title {
-  font-size: 3.25rem;
+.main_mark h1 {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+.main_mark p {
+  font-size: 1.5rem;
 }
 
 .main_mark--button {
@@ -172,6 +171,7 @@
 
 .form_title {
   font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
   padding: 8px;
 }
 
@@ -212,13 +212,6 @@ body h2 {
   right: 0;
   position: absolute;
   z-index: -1;
-}
-.bg .menu-fixed {
-  position: fixed;
-  top: 0;
-  z-index: 1020;
-  width: 100%;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .brand {

@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="container-fluid bg header">
         <!-- header -->
         <div class="row d-flex justify-content-between align-items-center">
@@ -46,14 +46,14 @@
         <!-- Main -->
         <div class="container main">
             <div class="row main_mark">
-                <div class="col-lg-6 d-flex justify-content-end align-items-center style=" padding:0;">
+                <div class="col-lg-6 d-flex justify-content-end align-items-center">
                     <div class="col-md-9" style="padding: 0;">
-                        <h1 class="main_mark--title">Watch It Outside Boston Edition</h1>
-                        <h3>Film Festival</h3>
+                        <h1>Watch It Outside Boston Edition</h1>
+                        <p>Film Festival</p>
                         <button class="main_mark--button"><a href="#About">Read more</a></button>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-start align-items-center style=" padding:0;">
+                <div class="col-lg-6 d-flex justify-content-start align-items-center">
                     <!-- form -->
                     <div class="col-md-8">
                         <form class="form">
@@ -79,13 +79,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
     <!-- About -->
-    <div class="container-fluid about ">
+    <div id="About" class="container-fluid about">
         <div class="row about_one">
             <div class="col-lg-6 p-2 d-flex align-items-center">
                 <div class="col-md-10">
-                    <h2><a id="About">About team</a> </h2>
+                    <h2><a>About team</a> </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi laudantium ullam
                         accusamus at dolorum, neque tempora mollitia illum, natus reiciendis velit inventore dolores
                         molestiae rem, soluta necessitatibus praesentium porro!</p>
@@ -118,233 +118,241 @@
         </div>
     </div>
     <!-- Calendar festival -->
-    <div class="container festival">
-        <h2 class="festival_title"><a id="CalendarFest">FESTIVAL FILM</a></h2>
-        <div class="festival_main">
-            <div class="row my-5">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="d-flex">
-                        <h3 class="calendarday_circle">5</h3>
-                        <h3 class="calendarday_title">Wednesday</h3>
-                    </div>
-                    <div class="calendarday_bg">
-                        <div class="calendarday_film">
-                            <a href="">first movie </a>
-                            <a href="">second movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
+    <div id="CalendarFest" class="festival">
+        <div class="container">
+            <div class="col-md-3">
+                <h2>Festival Film</h2>
+            </div>        
+            <div class="festival_main">
+                <div class="row my-5">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="d-flex">
+                            <h3 class="calendarday_circle">5</h3>
+                            <h3 class="calendarday_title">Wednesday</h3>
                         </div>
-                        <span>Public General</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="d-flex">
-                        <h3 class="calendarday_circle">6</h3>
-                        <h3 class="calendarday_title">Thursday</h3>
-                    </div>
-                    <div class="calendarday_bg">
-                        <div class="calendarday_film">
-                            <a href="">first movie </a>
-                            <a href="">second movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
+                        <div class="calendarday_bg">
+                            <div class="calendarday_film">
+                                <a href="">first movie </a>
+                                <a href="">second movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                            </div>
+                            <span>Public General</span>
                         </div>
-                        <span>Public General</span>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="d-flex">
-                        <h3 class="calendarday_circle">7</h3>
-                        <h3 class="calendarday_title">Friday</h3>
-                    </div>
-                    <div class="calendarday_bg">
-                        <div class="calendarday_film">
-                            <a href="">first movie </a>
-                            <a href="">second movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="d-flex">
+                            <h3 class="calendarday_circle">6</h3>
+                            <h3 class="calendarday_title">Thursday</h3>
                         </div>
-                        <span>Public General</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="d-flex">
-                        <h3 class="calendarday_circle">8</h3>
-                        <h3 class="calendarday_title">Saturday</h3>
-                    </div>
-                    <div class="calendarday_bg">
-                        <div class="calendarday_film">
-                            <a href="">first movie </a>
-                            <a href="">second movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
-                            <a href="">third movie</a>
+                        <div class="calendarday_bg">
+                            <div class="calendarday_film">
+                                <a href="">first movie </a>
+                                <a href="">second movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                            </div>
+                            <span>Public General</span>
                         </div>
-                        <span>Public General</span>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="d-flex">
+                            <h3 class="calendarday_circle">7</h3>
+                            <h3 class="calendarday_title">Friday</h3>
+                        </div>
+                        <div class="calendarday_bg">
+                            <div class="calendarday_film">
+                                <a href="">first movie </a>
+                                <a href="">second movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                            </div>
+                            <span>Public General</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="d-flex">
+                            <h3 class="calendarday_circle">8</h3>
+                            <h3 class="calendarday_title">Saturday</h3>
+                        </div>
+                        <div class="calendarday_bg">
+                            <div class="calendarday_film">
+                                <a href="">first movie </a>
+                                <a href="">second movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                                <a href="">third movie</a>
+                            </div>
+                            <span>Public General</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Several News -->
-    <div class="container news">
-        <h2 class="news_title"><a id="News">NEWS</a></h2>
-        <div class="row">
-            <div class="col-lg-10">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <article class="articles">
-                            <figure>
-                                <img src="https://picsum.photos/750/300" alt="">
-                            </figure>
-                            <a class="articles_title" href="https://www.bostonglobe.com/">The Boston Globe</a>
-                            <div class="text">
-                                <p>Hola hola</p>
-                                <div class="text_end">
-                                    <ul>
-                                        <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                    </ul>
+    <div id="News" class="news">
+        <div class="container">
+            <div class="col-md-3">
+                <h2>News</h2>
+            </div>        
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <article class="articles">
+                                <figure>
+                                    <img src="https://picsum.photos/750/300" alt="">
+                                </figure>
+                                <a class="articles_title" href="https://www.bostonglobe.com/">The Boston Globe</a>
+                                <div class="text">
+                                    <p>Hola hola</p>
+                                    <div class="text_end">
+                                        <ul>
+                                            <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
+                                                        class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article class="articles">
-                            <figure>
-                                <img src="https://picsum.photos/750/300" alt="">
-                            </figure>
-                            <a class="articles_title" href="https://www.bostonglobe.com/">The Boston Globe</a>
-                            <div class="text">
-                                <p>Hola hola</p>
-                                <div class="text_end">
-                                    <ul>
-                                        <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                    </ul>
+                            </article>
+                            <article class="articles">
+                                <figure>
+                                    <img src="https://picsum.photos/750/300" alt="">
+                                </figure>
+                                <a class="articles_title" href="https://www.bostonglobe.com/">The Boston Globe</a>
+                                <div class="text">
+                                    <p>Hola hola</p>
+                                    <div class="text_end">
+                                        <ul>
+                                            <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
+                                                        class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article class="articles">
-                            <figure>
-                                <img src="https://picsum.photos/750/300" alt="">
-                            </figure>
-                            <a class="articles_title" href="https://www.bostonglobe.com/">The Boston Globe</a>
-                            <div class="text">
-                                <p>Hola hola</p>
-                                <div class="text_end">
-                                    <ul>
-                                        <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                    </ul>
+                            </article>
+                            <article class="articles">
+                                <figure>
+                                    <img src="https://picsum.photos/750/300" alt="">
+                                </figure>
+                                <a class="articles_title" href="https://www.bostonglobe.com/">The Boston Globe</a>
+                                <div class="text">
+                                    <p>Hola hola</p>
+                                    <div class="text_end">
+                                        <ul>
+                                            <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
+                                                        class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article class="articles">
-                            <figure>
-                                <img src="https://picsum.photos/750/300" alt="">
-                            </figure>
-                            <a class="articles_title" href="https://www.bostonglobe.com/">The Boston Globe</a>
-                            <div class="text">
-                                <p>Hola hola</p>
-                                <div class="text_end">
-                                    <ul>
-                                        <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                    </ul>
+                            </article>
+                            <article class="articles">
+                                <figure>
+                                    <img src="https://picsum.photos/750/300" alt="">
+                                </figure>
+                                <a class="articles_title" href="https://www.bostonglobe.com/">The Boston Globe</a>
+                                <div class="text">
+                                    <p>Hola hola</p>
+                                    <div class="text_end">
+                                        <ul>
+                                            <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
+                                                        class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <article class="articles">
-                            <figure>
-                                <img src="https://picsum.photos/750/300" alt="">
-                            </figure>
-                            <a class="articles_title" href="">Boston.com</a c>
-                            <div class="text">
-                                <p>Hola hola</p>
-                                <div class="text_end">
-                                    <ul>
-                                        <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                    </ul>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <article class="articles">
+                                <figure>
+                                    <img src="https://picsum.photos/750/300" alt="">
+                                </figure>
+                                <a class="articles_title" href="">Boston.com</a c>
+                                <div class="text">
+                                    <p>Hola hola</p>
+                                    <div class="text_end">
+                                        <ul>
+                                            <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
+                                                        class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article class="articles">
-                            <figure>
-                                <img src="https://picsum.photos/750/300" alt="">
-                            </figure>
-                            <a class="articles_title" href="">Boston.com</a c>
-                            <div class="text">
-                                <p>Hola hola</p>
-                                <div class="text_end">
-                                    <ul>
-                                        <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                    </ul>
+                            </article>
+                            <article class="articles">
+                                <figure>
+                                    <img src="https://picsum.photos/750/300" alt="">
+                                </figure>
+                                <a class="articles_title" href="">Boston.com</a c>
+                                <div class="text">
+                                    <p>Hola hola</p>
+                                    <div class="text_end">
+                                        <ul>
+                                            <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
+                                                        class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article class="articles">
-                            <figure>
-                                <img src="https://picsum.photos/750/300" alt="">
-                            </figure>
-                            <a class="articles_title" href="">Boston.com</a c>
-                            <div class="text">
-                                <p>Hola hola</p>
-                                <div class="text_end">
-                                    <ul>
-                                        <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                    </ul>
+                            </article>
+                            <article class="articles">
+                                <figure>
+                                    <img src="https://picsum.photos/750/300" alt="">
+                                </figure>
+                                <a class="articles_title" href="">Boston.com</a c>
+                                <div class="text">
+                                    <p>Hola hola</p>
+                                    <div class="text_end">
+                                        <ul>
+                                            <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
+                                                        class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article class="articles">
-                            <figure>
-                                <img src="https://picsum.photos/750/300" alt="">
-                            </figure>
-                            <a class="articles_title" href="">Boston.com</a c>
-                            <div class="text">
-                                <p>Hola hola</p>
-                                <div class="text_end">
-                                    <ul>
-                                        <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                    </ul>
+                            </article>
+                            <article class="articles">
+                                <figure>
+                                    <img src="https://picsum.photos/750/300" alt="">
+                                </figure>
+                                <a class="articles_title" href="">Boston.com</a c>
+                                <div class="text">
+                                    <p>Hola hola</p>
+                                    <div class="text_end">
+                                        <ul>
+                                            <li><a class="Button-button-fb" href="https://www.facebook.com/globe"><i
+                                                        class="fab fa-facebook-f"></i></a></li>
+                                            <li><a class="Button-button-tw" href="https://twitter.com/BostonGlobe"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
+                            </article>
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-2">
+                    <div class="jumbotron" style="height: 100%;">Publicity</div>
+                </div>
             </div>
-            <div class="col-lg-2">
-                <div class="jumbotron" style="height: 100%;">Publicity</div>
-            </div>
-        </div>
+        </div>           
     </div>
     <!-- footer -->
     <div class="footer">
@@ -390,7 +398,6 @@
             </div>
         </div>
     </div>
-
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
